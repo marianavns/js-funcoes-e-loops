@@ -1,9 +1,17 @@
 const input = require('readline-sync')
 
-// 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. Exemplo: 'banana' -> 'B A N A N A'
+// 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. 
+/* Exemplo: 'banana' -> 'B A N A N A' */
+
+          let palavra = input.question("Digite uma palavra: ")
+
+          function maiuscula(){
+            console.log(palavra.toUpperCase())
+          }
+/* Faltam os espaços entre as letras. */
+          maiuscula()
 
 // 2) crie uma função que receba um número e devolva uma soma progressiva. Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
-
 
 // 3) crie um programa que pergunta seu nome. Depois que digitar o nome, o programa deverá responder 'Olá [nome]'.
 // Enquanto digitar qualquer palavra, print o que foi digitado mas avise que, para sair, é só dizer 'Tchau'.
@@ -15,6 +23,7 @@ const input = require('readline-sync')
                             // 20        0
 
 // 5) crie uma função que receba um número e imprima no console de 0 até o número informado. Além disso, cada vez que imprimir o número, informe se é par ou ímpar. Exemplo: recebendo 5, deve imprimir: "0 é par", "1 é ímpar", "2 é par", "3 é ímpar", "4 é par", "5 é ímpar". 
+
 
 // 6) crie uma função que receba um número inteiro e imprima os números no console em ordem, de 1 até o número. Porém, para todos os números que forem múltiplos de 3, imprima na tela "banana" ao invés do número; para os números múltiplos de 5, imprima "biscoito". Para números múltiplos de 3 e 5, imprima "biscoito de banana". Exemplo, recebendo 15 o resultado será:
 // 1
