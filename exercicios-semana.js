@@ -1,6 +1,49 @@
+const input = require('readline-sync')
+
 // 1) Calcule a potência de 2 elevado a um número específico. Deve usar um loop (não usar `Math.pow()`).
 // Exemplo:
 // potenciaDeDois(10) // 1024
+
+            /* PRIMEIRA TENTATIVA COM WHILE
+            var tentativa = 1
+
+            while(tentativa > 0){
+                let entrada = input.question ("Digite um numero. Caso deseje encerrar a aplicacao, digite SAIR: ")
+                    if (entrada === "SAIR"){
+                        console.log("FIM")
+                        tentativa = -1
+                        }else{
+                            let numeroValido = (parseInt(entrada))
+                            let resultado = numeroValido ** 2
+                            console.log(resultado)
+                            }
+            tentativa++
+                } */
+
+for (var tentativa = 1; tentativa > 0; tentativa++) {
+    let entrada = input.question ("Digite um numero. Caso deseje encerrar a aplicacao, digite SAIR: ")
+            if (entrada === "SAIR"){
+            console.log("FIM")
+            tentativa = -1
+                }else{
+                let numeroValido = (parseInt(entrada))
+                let resultado = numeroValido ** 2
+                console.log(resultado)
+                    }
+    }
+
+
+
+
+
+
+
+/* function potenciaDe2 (entrada){
+    2 ** entrada
+    console.log
+} */
+
+
 
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
 // Exemplo:
