@@ -44,5 +44,3 @@ console.log("console do nome", nome.length)
 
 
 
-
-

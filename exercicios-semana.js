@@ -4,23 +4,7 @@ const input = require('readline-sync')
 // Exemplo:
 // potenciaDeDois(10) // 1024
 
-            /* PRIMEIRA TENTATIVA COM WHILE
-            var tentativa = 1
-
-            while(tentativa > 0){
-                let entrada = input.question ("Digite um numero. Caso deseje encerrar a aplicacao, digite SAIR: ")
-                    if (entrada === "SAIR"){
-                        console.log("FIM")
-                        tentativa = -1
-                        }else{
-                            let numeroValido = (parseInt(entrada))
-                            let resultado = numeroValido ** 2
-                            console.log(resultado)
-                            }
-            tentativa++
-                } */
-
-for (var tentativa = 1; tentativa > 0; tentativa++) {
+for (let tentativa = 1; tentativa > 0; tentativa++) {
     let entrada = input.question ("Digite um numero. Caso deseje encerrar a aplicacao, digite SAIR: ")
             if (entrada === "SAIR"){
             console.log("FIM")
@@ -32,26 +16,13 @@ for (var tentativa = 1; tentativa > 0; tentativa++) {
                     }
     }
 
-
-
-
-
-
-
-/* function potenciaDe2 (entrada){
-    2 ** entrada
-    console.log
-} */
-
-
-
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
 // Exemplo:
 // retornaNumMaior(10, 20, 30) // 30
 
-// ***************
+/***************
 
-// DESAFIOS!
+/* // DESAFIOS!
 
 // Crie uma função que determina se um número é primo e retorne true ou false conforme o caso. Em matemática, um número primo é um número natural maior que 1 que é divisível somente por ele mesmo e 1. Utilize o operador módulo (`%`) para determinar se um número é divisível por outro.
 
@@ -61,4 +32,4 @@ for (var tentativa = 1; tentativa > 0; tentativa++) {
 
 // Use estruturas de controle para inverter uma array de inteiros. A função deverá receber uma array de números e retornar uma array com a ordem dos elementos invertida. Não é válido utilizar `arr.reverse()`.
 // Exemplo:
-// function inverteArray([1, 2, 3, 4]) // [4, 3, 2, 1]
+// function inverteArray([1, 2, 3, 4]) // [4, 3, 2, 1] */
