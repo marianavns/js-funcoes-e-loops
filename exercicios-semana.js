@@ -4,7 +4,7 @@ const input = require('readline-sync')
 // Exemplo:
 // potenciaDeDois(10) // 1024
 
-/* function potenciaDeDois(){
+function potenciaDeDois(){
 
     for (let tentativa = 1; tentativa > 0; tentativa++) {
         let entrada = input.question ("Digite um numero e veja seu valor ao quadrado. Caso deseje encerrar a aplicacao, digite SAIR: ")
@@ -18,7 +18,7 @@ const input = require('readline-sync')
                         }
         }
     }
-potenciaDeDois(); */
+potenciaDeDois();
 
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
 // Exemplo:
@@ -68,11 +68,11 @@ function retornaNumMaior(){
                                     tentativa = -1
                                     }
                                 }
-                        }
-               }
-                                    }
                             }
+                        }
+                    }
                 }
+            }
     }
 
     retornaNumMaior()
