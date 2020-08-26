@@ -4,66 +4,80 @@ const input = require('readline-sync')
 // Exemplo:
 // potenciaDeDois(10) // 1024
 
-for (let tentativa = 1; tentativa > 0; tentativa++) {
-    let entrada = input.question ("Digite um numero e veja seu valor ao quadrado. Caso deseje encerrar a aplicacao, digite SAIR: ")
-            if (entrada === "SAIR"){
-            console.log("FIM")
-            tentativa = -1
-                }else{
-                let numeroValido = (parseInt(entrada))
-                let resultado = numeroValido ** 2
-                console.log(resultado)
-                    }
-    }
+/* function potenciaDeDois(){
 
-    
+    for (let tentativa = 1; tentativa > 0; tentativa++) {
+        let entrada = input.question ("Digite um numero e veja seu valor ao quadrado. Caso deseje encerrar a aplicacao, digite SAIR: ")
+                if (entrada === "SAIR"){
+                console.log("FIM")
+                tentativa = -1
+                    }else{
+                    let numeroValido = (parseInt(entrada))
+                    let resultado = numeroValido ** 2
+                    console.log(resultado)
+                        }
+        }
+    }
+potenciaDeDois(); */
+
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
 // Exemplo:
 // retornaNumMaior(10, 20, 30) // 30
 
 /* APRIMORAMENTOS A FAZER: 
 Qual a resposta se o usuário nao digitar números?
+Qual a resposta se o usuário digitar 2 números iguais?
 É possível configurar se ele digitar 2 numeros e uma palavra? */
 
+function retornaNumMaior(){
 
-console.log("Digite 3 NÚMEROS e diremos qual é o maior! Caso deseje sair, digite SAIR em qualquer momento.")
-    let num1 = input.question ("Primeiro numero: ")
+    console.log(" ")
+    console.log(" ### Digite 3 NÚMEROS e diremos qual é o maior! ### ")
+    console.log("Caso deseje sair, digite SAIR em qualquer momento.")
+        
+        let num1 = input.question ("Primeiro numero: ")
         if (num1 === "SAIR"){
             console.log("Sentirei saudades :(")
             tentativa = -1
-        } else {
-    let num2 = input.question ("Segundo numero: ")
-        if (num2 === "SAIR"){
-            console.log("Sentirei saudades :(")
-            tentativa = -1
-        } else {
-    let num3 = input.question ("Terceiro numero: ")
-        if (num3 === "SAIR"){
-            console.log("Sentirei saudades :(")
-            tentativa = -1
-        } else {
+                } else {
+                    let num2 = input.question ("Segundo numero: ")
+                    if (num2 === "SAIR"){
+                        console.log("Sentirei saudades :(")
+                        tentativa = -1
+                            } else {
+                                let num3 = input.question ("Terceiro numero: ")
+                                if (num3 === "SAIR"){
+                                    console.log("Sentirei saudades :(")
+                                    tentativa = -1
+                                    } else {
 
-            for (let tentativa = 1; tentativa > 0; tentativa++){
-                if (parseInt(num1)>parseInt(num2) && parseInt(num1)>parseInt(num3)){
-                console.log("O maior número é " + num1)
-                tentativa = -1
-                    } else {
-                if (parseInt(num2)>parseInt(num1) && parseInt(num2)>parseInt(num3)){
-                console.log("O maior número é " + num2)
-                tentativa = -1
-                    } else {
-                if (parseInt(num3)>parseInt(num1) && parseInt(num3)>parseInt(num2)){
-                console.log("O maior número é " + num3)
-                tentativa = -1
+                for (let tentativa = 1; tentativa > 0; tentativa++){
+                    if (parseInt(num1)>parseInt(num2) && parseInt(num1)>parseInt(num3)){
+                    console.log("O maior número é " + num1)
+                    retornaNumMaior()
+                    tentativa = -1
+                        } else {
+                            if (parseInt(num2)>parseInt(num1) && parseInt(num2)>parseInt(num3)){
+                            console.log("O maior número é " + num2)
+                            retornaNumMaior()
+                            tentativa = -1
+                                } else {
+                                    if (parseInt(num3)>parseInt(num1) && parseInt(num3)>parseInt(num2)){
+                                    console.log("O maior número é " + num3)
+                                    retornaNumMaior()
+                                    tentativa = -1
+                                    }
+                                }
+                        }
+               }
+                                    }
+                            }
                 }
-                    }
-                    }
-            }
-        }
-        }
-        }
-     
+    }
 
+    retornaNumMaior()
+
+    
 
 /***************
 

@@ -1,9 +1,26 @@
+const input = require('readline-sync')
+
+function potenciaDeDois(){
+
+for (let tentativa = 1; tentativa > 0; tentativa++) {
+    let entrada = input.question ("Digite um numero e veja seu valor ao quadrado. Caso deseje encerrar a aplicacao, digite SAIR: ")
+            if (entrada === "SAIR"){
+            console.log("FIM")
+            tentativa = -1
+                }else{
+                let numeroValido = (parseInt(entrada))
+                let resultado = numeroValido ** 2
+                console.log(resultado)
+                    }
+    }
+}
+potenciaDeDois();
 
 /* APRIMORAMENTOS A FAZER: 
 Qual a resposta se o usuário nao digitar números?
 É possível configurar se ele digitar 2 numeros e uma palavra? */
 
-const input = require('readline-sync')
+/* const input = require('readline-sync')
 
 console.log("Digite 3 NÚMEROS e diremos qual é o maior! Caso deseje sair, digite SAIR em qualquer momento.")
     let num1 = input.question ("Primeiro numero: ")
@@ -40,4 +57,4 @@ console.log("Digite 3 NÚMEROS e diremos qual é o maior! Caso deseje sair, digi
             }
         }
         }
-        }
+        } */
