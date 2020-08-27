@@ -115,25 +115,25 @@ divide(valor1, valor2)
  2. Se qualquer um dos três números não forem informados, a função deve retornar a string: "Preencha todos os valores corretamente!"
  3. O retorno da função deve ser a multiplicação dos 3 números, somando `2` ao resultado da multiplicação. DICA: pesquise o que aparece no console.log caso uma função precise de um parâmetro, mas não receba nenhum.  */
 
-/* const input = require('readline-sync')
-
-let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
-let valor2 = parseInt(input.question ("Digite o segundo numero: "))
-let valor3 = parseInt(input.question ("Digite o terceiro numero: "))
-
-function multiplicaMais2(par1, par2, par3){
-
-    for (let contador = 0; contador >= 0; contador++){
-        if(isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
-            console.log("Preencha todos os valores corretamente!")
-            break
-            } else {   
-            return (par1 * par2 * par3 + 2)
-                }
-        }
-    }
-
-console.log(multiplicaMais2(valor1, valor2, valor3)) */
+ console.log("Esta aplicacao captura 3 numeros informados pela usuaria, multiplica e adiciona 2")
+ console.log("Se algum numero nao for informado, a funcao nao é acionada")
+ 
+ const input = require('readline-sync')
+ let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+ let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+ let valor3 = parseInt(input.question ("Digite o terceiro numero: "))
+ 
+ function multiplicaMais2(par1, par2, par3){
+ 
+       if(isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
+         console.log("Preencha todos os valores corretamente!")
+         } else {   
+             let resultado = (par1 * par2 * par3 + 2)
+             console.log(resultado)
+             }
+     }
+ 
+ multiplicaMais2(valor1, valor2, valor3)
 
 /* 7) Crie uma função com as seguintes características:
  1. A função deve receber 3 parâmetros.
