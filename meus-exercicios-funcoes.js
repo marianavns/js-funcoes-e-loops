@@ -5,18 +5,49 @@ Você pode dar os nomes que quiser para as funções e variáveis, apenas lembre
 1) crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão), cada uma delas recebendo 2 números como parâmetros e retornando o resultado */
 
 /*####### SOMA #######*/
-const input1 = require('readline-sync')
-const input2 = require('readline-sync')
 
-let valor1 = parseInt(input1.question ("Digite o primeiro numero: "))
-let valor2 = parseInt(input2.question ("Digite o segundo numero: "))
+    const input = require('readline-sync')
+    console.log("#### Somando dois numeros ####")
+    let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+    let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+        function soma (num1, num2){
+            return num1 + num2
+        }
+    console.log("O valor da soma dos números " + valor1 + " e " + valor2 + " é igual a " + soma(valor1,valor2))  */
 
-function soma (num1, num2){
-    return num1 + num2
-}
-console.log("O valor da soma dos números " + valor1 + " e " + valor2 + " é igual a " + soma(valor1,valor2)) 
 
+/*####### SUBTRAÇÃO #######*/
 
+    const input = require('readline-sync')
+    console.log("#### Subtraindo dois numeros ####")
+    let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+    let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+        function subtrai (num1, num2){
+            return num1 - num2
+        }
+    console.log("A diferença entre o primeiro número (" + valor1 + ") e o segundo (" + valor2 + ") é igual a " + subtrai(valor1,valor2)) */
+
+/*####### MULTIPLICACAO #######*/
+    
+    const input = require('readline-sync')
+    console.log("#### Multiplicando dois numeros ####")
+    let valor1 = input.question("Digite o primeiro numero: ")
+    let valor2 = input.question("Digite o segundo numero: ")
+        const multiplica = function (num1, num2){
+            return num1 * num2
+        }
+    console.log("A multiplicacao dos numeros " + valor1 + " e " + valor2 + " é igual a " + multiplica(valor1, valor2)) */
+
+/*####### DIVISAO #######*/
+
+    const input = require('readline-sync')
+    console.log("#### Dividindo dois numeros ####")
+    let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+    let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+        function divide (num1, num2){
+            return num1 / num2
+        }
+    console.log("A divisao do primeiro número (" + valor1 + ") pelo segundo (" + valor2 + ") é igual a " + divide(valor1,valor2)) 
 
  /* 2) para esse exercício, as funções de multiplicação e divisão não devem aceitar valores iguais a 0 (zero). Adicione esta lógica nas funções.
 
@@ -31,27 +62,25 @@ console.log("O valor da soma dos números " + valor1 + " e " + valor2 + " é igu
  2. Se qualquer um dos três números não forem informados, a função deve retornar a string: "Preencha todos os valores corretamente!"
  3. O retorno da função deve ser a multiplicação dos 3 números, somando `2` ao resultado da multiplicação. DICA: pesquise o que aparece no console.log caso uma função precise de um parâmetro, mas não receba nenhum.  */
 
-const input61 = require('readline-sync')
-const input62 = require('readline-sync')
-const input63 = require('readline-sync')
+/* const input = require('readline-sync')
 
-let valor1 = parseInt(input61.question ("Digite o primeiro numero: "))
-let valor2 = parseInt(input62.question ("Digite o segundo numero: "))
-let valor3 = parseInt(input63.question ("Digite o terceiro numero: "))
+let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+let valor3 = parseInt(input.question ("Digite o terceiro numero: "))
 
 function multiplicaMais2(par1, par2, par3){
 
-    for (let tentativa = 1; tentativa > 0; tentativa++){
+    for (let contador = 0; contador >= 0; contador++){
         if(isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
             console.log("Preencha todos os valores corretamente!")
-            tentativa = -1
+            break
             } else {   
-return (par1 * par2 * par3 + 2)
+            return (par1 * par2 * par3 + 2)
                 }
         }
     }
 
-console.log(multiplicaMais2(valor1, valor2, valor3))
+console.log(multiplicaMais2(valor1, valor2, valor3)) */
 
 /* 7) Crie uma função com as seguintes características:
  1. A função deve receber 3 parâmetros.
