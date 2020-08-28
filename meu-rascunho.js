@@ -1,19 +1,20 @@
 
+console.log("Esta aplicacao captura 3 numeros informados pela usuaria, multiplica e adiciona 2")
+console.log("Se algum numero nao for informado, a funcao nao é acionada")
 
-// 7) Crie uma função com as seguintes características:
-// 1. A função deve receber 3 parâmetros.
-// 2. Se somente um parâmetro for passado, retorne o valor do parâmetro.
-// 3. Se dois parâmetros forem passados, retorne a soma dos dois parâmetros.
-// 4. Se todos os parâmetros forem passados, retorne a soma do primeiro com o segundo, e o resultado dividido pelo terceiro.
-// 5. Se nenhum parâmetro for passado, retorne "não recebeu parâmetro"
+const input = require('readline-sync')
+let valor1 = parseInt(input.question ("Digite o primeiro numero: "))
+let valor2 = parseInt(input.question ("Digite o segundo numero: "))
+let valor3 = parseInt(input.question ("Digite o terceiro numero: "))
 
-const input1 = require('readline-sync')
+function multiplicaMais2(par1, par2, par3){
 
-function potenciaDeDois(numero1) {
-    return parseInt(numero1) ** 2
-  }
+      if(isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
+        console.log("Por favor, preencha todos os valores corretamente.")
+        } else {   
+            let resultado = (par1 * par2 * par3 + 2)
+            console.log(resultado)
+            }
+    }
 
-let par1 = input1.question("Insira um numero aqui: ")
-
-console.log(potenciaDeDois(par1))
-
+multiplicaMais2(valor1, valor2, valor3)

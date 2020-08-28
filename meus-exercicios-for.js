@@ -1,15 +1,24 @@
-const input = require('readline-sync')
+/* const input = require('readline-sync') */
 
 // 1) crie uma função que receba uma string e devolva seu valor em letras maiúsculas, separadas por um espaço. 
 /* Exemplo: 'banana' -> 'B A N A N A' */
 
-          let palavra = input.question("Digite uma palavra: ")
+          /* let palavra = input.question("Digite uma palavra: ") */
 
-          function maiuscula(){
-            console.log(palavra.toUpperCase())
-          }
+          /* function maiuscula(par){
+            console.log(par.toUpperCase())
+          } */
+          const palavraString = "banana"
+          console.log(palavraString)
+
+          /* str
+          function splitString(par,separador){
+            let arrayOfString = par.split(separador)
+            console.log(arrayOfString.join)
+            }
 /* Faltam os espaços entre as letras. */
-          maiuscula()
+         /*  maiuscula(palavra) */
+         /*  splitString(palavra,"/") */ */
 
 // 2) crie uma função que receba um número e devolva uma soma progressiva. 
 // Por exemplo, recebendo o número 5, a função deve retornar 15, ou seja, o resultado de 1 + 2 + 3 + 4 + 5. 
