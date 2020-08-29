@@ -1,8 +1,10 @@
 #Resumo #Javascript
 
-## Observações Aleatórias <h1>
+## Resumo em Construção sobre a semana 3  <h1>
 
-### Return <h2>
+### Observaçoes Aleatórias <h2>
+
+### Return <h3>
 
 **Return** é quem manda para fora da função o que queremos. Olha o exemplo em funções:
 
