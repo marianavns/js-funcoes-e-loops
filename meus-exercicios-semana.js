@@ -2,7 +2,7 @@
 // Exemplo:
 // potenciaDeDois(10) // 1024
 
-/* const input = require('readline-sync')
+const input = require('readline-sync')
  
 function potenciaDeDois(){
 
@@ -19,7 +19,7 @@ function potenciaDeDois(){
         }
     }
 potenciaDeDois(); 
- */
+
     
 // 2) Crie uma função que receba três números e determine se um número é maior que outro.
 // Exemplo:
@@ -28,8 +28,13 @@ potenciaDeDois();
 
 const input = require('readline-sync')
 
-function verificaSair(){
-    let num1 = input.question ("Primeiro numero: ")
+function retornaNumMaior(){
+
+    console.log(" ")
+    console.log(" ### Digite 3 NÚMEROS e diremos qual é o maior! ### ")
+    console.log("Caso deseje sair, digite SAIR em qualquer momento.")
+        
+        let num1 = input.question ("Primeiro numero: ")
         if (num1 === "SAIR"){
             console.log("Sentirei saudades :(")
             tentativa = -1
@@ -44,16 +49,8 @@ function verificaSair(){
                                     console.log("Sentirei saudades :(")
                                     tentativa = -1
                                     } else {
-                                        retornaNumMaior()
-}
 
-function retornaNumMaior(){
-
-    console.log(" ")
-    console.log(" ### Digite 3 NÚMEROS e diremos qual é o maior! ### ")
-    console.log("Caso deseje sair, digite SAIR em qualquer momento.")
-        verificaSair()
-                    for (let tentativa = 1; tentativa > 0; tentativa++){
+                for (let tentativa = 1; tentativa > 0; tentativa++){
                     if (parseInt(num1)>parseInt(num2) && parseInt(num1)>parseInt(num3)){
                     console.log("O maior número é " + num1)
                     retornaNumMaior()
@@ -79,10 +76,6 @@ function retornaNumMaior(){
 
     retornaNumMaior()
 
-    /* APRIMORAMENTOS A FAZER: 
-Qual a resposta se o usuário nao digitar números?
-Qual a resposta se o usuário digitar 2 números iguais?
-É possível configurar se ele digitar 2 numeros e uma palavra? */
 
 
 // DESAFIOS!
