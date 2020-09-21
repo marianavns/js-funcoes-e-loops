@@ -1,0 +1,22 @@
+{
+  "name": "reprograma-s3-funcoes-e-loops",
+  "version": "1.0.0",
+  "description": "# Resumo em Construção sobre a semana 3  <h1>",
+  "main": "exercicios-for.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianavns/reprograma-s3-funcoes-e-loops.git"
+  },
+  "author": "marianavns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianavns/reprograma-s3-funcoes-e-loops/issues"
+  },
+  "homepage": "https://github.com/marianavns/reprograma-s3-funcoes-e-loops#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
