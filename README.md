@@ -55,3 +55,26 @@ function soma (num1, num2){
 
 Note que nós escrevemos um pouco mais se não usamos o *return*. **Tente usar o return com mais frequência**
 
+## Loops
+
+Toda vez que vamos pensar em um for, pensamos em três perguntas:
+
+O que queremos que seja repetido a cada loop?
+Que valor(es) queremos alterar a cada loop?
+Quando queremos que o loop pare?
+Agora vamos ver um código que calcula 2^10 (2 exponencial 10), usando for:
+```js
+let resultado = 1
+for (let contador = 0; contador < 10; contador++){
+  resultado = resultado * 2
+}
+console.log(resultado)
+// → 1024
+```
+A representação geral do loop for é a seguinte:
+
+```js
+for (inicial; condição; incremento){
+  Bloco de código a executar
+}
+```
